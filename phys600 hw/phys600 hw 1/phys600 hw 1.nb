@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     75788,       1542]
-NotebookOptionsPosition[     74813,       1519]
-NotebookOutlinePosition[     75235,       1536]
-CellTagsIndexPosition[     75192,       1533]
+NotebookDataLength[     75944,       1547]
+NotebookOptionsPosition[     74968,       1524]
+NotebookOutlinePosition[     75390,       1541]
+CellTagsIndexPosition[     75347,       1538]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1509,13 +1509,18 @@ MqnpvdBD4H9Vk32J
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"Export", "[", 
-   RowBox[{
-   "\"\</Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 \
-hw 1/combined_plot.png\>\"", ",", "combinedPlot"}], "]"}], ";"}]], "Input",
+  RowBox[{"(*", 
+   RowBox[{"Export", " ", "image", " ", "to", " ", "png"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Export", "[", 
+    RowBox[{
+    "\"\</Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 \
+hw 1/combined_plot.png\>\"", ",", "combinedPlot"}], "]"}], ";"}]}]], "Input",
  CellChangeTimes->{{3.902869917909616*^9, 3.902869917913438*^9}, {
-  3.902869974069563*^9, 3.902869975471759*^9}},
- CellLabel->"In[81]:=",ExpressionUUID->"f2d99eb1-671e-4c51-b784-585bda0de69e"]
+  3.902869974069563*^9, 3.902869975471759*^9}, {3.902870766799211*^9, 
+  3.902870776612204*^9}},ExpressionUUID->"f2d99eb1-671e-4c51-b784-\
+585bda0de69e"]
 },
 WindowSize->{1512, 844},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
@@ -1543,7 +1548,7 @@ Cell[CellGroupData[{
 Cell[5241, 139, 476, 9, 46, "Input",ExpressionUUID->"557e81af-1e97-4ca4-a864-c694a8239644"],
 Cell[5720, 150, 68665, 1356, 582, "Output",ExpressionUUID->"1b71725a-22c6-4b60-9d67-7eed3ce838f1"]
 }, Open  ]],
-Cell[74400, 1509, 409, 8, 46, "Input",ExpressionUUID->"f2d99eb1-671e-4c51-b784-585bda0de69e"]
+Cell[74400, 1509, 564, 13, 78, "Input",ExpressionUUID->"f2d99eb1-671e-4c51-b784-585bda0de69e"]
 }
 ]
 *)
