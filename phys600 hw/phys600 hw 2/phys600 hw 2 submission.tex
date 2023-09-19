@@ -1,0 +1,118 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%This is a science homework template. Modify the preamble to suit your needs. 
+%The junk text is   there for you to immediately see how the headers/footers look at first 
+%typesetting.
+
+\documentclass[12pt]{article}
+
+%AMS-TeX packages
+\usepackage{amssymb,amsmath,amsthm} 
+\usepackage{commath}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,ctable,booktabs}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{cancel}
+\usepackage{wrapfig}
+\usepackage{braket}
+\usepackage{enumitem}
+\usepackage{pdfpages}
+
+\usepackage{graphicx}
+\usepackage{subfig}
+
+%Redefining sections as problems
+
+\makeatletter
+\newenvironment{problem}{\@startsection
+	{section}
+	{1}
+	{-.2em}
+	{-3.5ex plus -1ex minus -.2ex}
+	{2.3ex plus .2ex}
+	{\pagebreak[3]%forces pagebreak when space is small; use \eject for better results
+		\large\bf\noindent{Problem }
+	}
+}
+{%\vspace{1ex}\begin{center} \rule{0.3\linewidth}{.3pt}\end{center}}
+	\begin{center}\large\bf \ldots\ldots\ldots\end{center}}
+\makeatother
+
+%Fancy-header package to modify header/page numbering 
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Problem \thesection}
+\chead{} 
+\rhead{\thepage} 
+\lfoot{\small\scshape PHYS 600} 
+\cfoot{} 
+\rfoot{\footnotesize HW 2} 
+\renewcommand{\headrulewidth}{.3pt} 
+\renewcommand{\footrulewidth}{.3pt}
+\setlength\voffset{-0.25in}
+\setlength\textheight{648pt}
+\allowdisplaybreaks
+
+\newcommand{\partder}[3]{\ensuremath{\left(\frac{\partial {#1}}{\partial {#2}}\right)_{#3}}}
+
+\newcommand{\braks}[1]{\ensuremath{\left\langle{#1} \right\rangle} }
+
+\setlength{\parindent}{0pt} % No indent by default
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%
+%Contents of problem set
+%    
+\begin{document}
+	
+	\title{PHYS 600: Homework 2}
+	\author{Yarone Tokayer}
+	\date{September 22, 2023}
+	
+	\maketitle
+	
+	\thispagestyle{empty}
+
+	\begin{problem}{Friedmann Equation II}
+		We wish to derive \begin{equation} \label{eq:f2}
+			\frac{\ddot{a}}{a} = -\frac{4\pi G}{3}(\rho + 3P)
+		\end{equation} from the equations \begin{align}
+			\left(\frac{\dot{a}}{a}\right)^2 &= \frac{8\pi G}{3}\rho - \frac{\kappa}{R_0^2a^2} \label{eq:f1}
+			\\
+			0 &= \dot{\rho} + 3H(\rho+P) \label{eq:cont}
+		\end{align}
+		
+		Begin by taking the time derivative on both sides of Eq.~\ref{eq:f1}: \begin{align*}
+			2 H \frac{a\ddot{a} - \dot{a}^2}{a^2} &= \frac{8\pi G}{3}\dot{\rho} - 2 H \frac{\kappa}{R_0^2a^2} & \textit{$\left(H = \frac{\dot{a}}{a}\right)$}
+			\\
+			2H \frac{\ddot{a}}{a} - 2H^3 &= -3H \frac{8\pi G}{3}(\rho + P) - 2 H \frac{\kappa}{R_0^2a^2}  & \textit{(Eq.~\ref{eq:cont})}
+			\\
+			\frac{\ddot{a}}{a} - H^2 &= -\frac{8\pi G}{3}\rho - \frac{4\pi G}{3}\rho -3 \frac{4\pi G}{3} P -  \frac{\kappa}{R_0^2a^2}
+			\\
+			\frac{\ddot{a}}{a} - \cancel{H^2} &= -\cancel{H^2} - \frac{4\pi G}{3}\rho -3 \frac{4\pi G}{3} P & \textit{(Eq.~\ref{eq:f1})}
+			\\
+			\frac{\ddot{a}}{a} &= -\frac{4\pi G}{3}(\rho + 3P)
+		\end{align*}
+	
+	\end{problem}
+	
+	\begin{problem}{Cosmological Dimming}
+		We saw in class that the angular diameter distance goes as $(1+z)^{-1}$, which implies that angular size goes as $(1+z)$. Additionally, we note that the bolometric luminosity $L$ scales as $(1+z)^{-2}$, where the two factors of $(1+z)$ are due to cosmological redshift and hubble drag, respectively.\\
+		
+		By definition, the bolometric surface brightness of an object, $I_\mathrm{e}$ is given by \begin{equation*}
+			I_\mathrm{e} = \frac{L}{4\pi r^2},
+		\end{equation*} where $L$ is the intrinsic bolometric luminosity and $r$is the radius of the object.  Using the scalings above, we then get for the observed surface brightness: \begin{align*}
+			I_\mathrm{o} &= \frac{L (1+z)^{-2} }{4\pi \left(r(1 + z)\right)^2}
+			\\
+			&= I_\mathrm{e} (1+z)^{-4}
+		\end{align*}
+		
+	\end{problem}
+
+
+
+% Appendix
+% \includepdf[pages=-]{/Users/yaronetokayer/Yale Drive/Classes/ASTR 610/astr610 ps/astr610 ps 4/astr610 ps 4.pdf}
+
+\end{document}
