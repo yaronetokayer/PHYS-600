@@ -109,8 +109,58 @@
 		\end{align*}
 		
 	\end{problem}
-
-
+	
+	\begin{problem}{Magnitudes and K-corrections}
+		\begin{itemize}
+			\item \begin{align*}
+				m &= -2.5 \log \left[\frac{f}{f_0}\right]
+				\\
+				&= -2.5 \log \left[\frac{f}{f(10\text{ pc})}\frac{f(10\text{ pc})}{f_0}\right]
+				\\
+				&= -2.5 \log \left[\frac{f(10\text{ pc})}{f_0}\right] -2.5 \log \left[\frac{f}{f(10\text{ pc})}\right] 
+				\\
+				&= M -2.5 \log \left[\frac{10\text{ pc}}{D_\mathrm{L}(z)}\right]^2
+				\\
+				&= M +5 \log \left[\frac{D_\mathrm{L}(z)}{10\text{ pc}}\right]
+				\\
+				&= M + \mathrm{DM}(z)
+			\end{align*}
+			
+			\item In general, flux $S$ is related to bolometric luminosity $L$ by \begin{equation*}
+				S = \frac{L}{4\pi D_\mathrm{L}^2}
+			\end{equation*} For a flux in the frequency interval $(\nu,\nu + \dif\nu)$, we must look not at the energy band being observed, but the emitted energy band, which is given by $\nu(1 + z)$, hence the intrinsic luminosity band we are interested in is $L_{\nu(1+z)}$, and we must multiply by the ratio $L_{\nu(1+z)}/L_\nu$.  Finally, we add a factor of $(1+z)$ to account for the fact that the photons have redshifted, so we need to convert back to the restframe.  So we get:  \begin{equation*}
+				S_\nu = (1+z) \frac{L_{\nu(1+z)}}{L_\nu} \frac{L_\nu}{4\pi D_\mathrm{L}^2}
+			\end{equation*}
+		\end{itemize}
+		
+	\end{problem}
+	
+	\begin{problem}{A Static Universe}
+		\begin{itemize}
+			\item Begin by differentiating Friedmann I with respect to time: \begin{align*}
+				\frac{\dif}{\dif t} \left[\left(\frac{\dot{a}}{a}\right)^2\right] &= \frac{\dif}{\dif t}  \left[\frac{8\pi G}{3}\left(\rho_\mathrm{M} + \rho_\Lambda\right) - \frac{k}{a^2}\right]
+				\\
+				2 \frac{\ddot{a}}{a} \frac{\dot{a}}{a} &= \frac{8\pi G}{3}\left(\dot{\rho_\mathrm{M}} + \dot{\rho_\Lambda}\right) - \left(-2k\frac{\dot{a}}{a^3}\right)
+				\\
+				2 \frac{\ddot{a}}{a} \frac{\dot{a}}{a} &= \frac{8\pi G}{3} \left[-3\frac{\dot{a}}{a}\left(\rho_\mathrm{M} + \cancelto{0}{P_\mathrm{M}} + \rho_\Lambda - \rho_\Lambda \right) \right]+ 2k\frac{\dot{a}}{a^3}
+				\\
+				\implies \frac{\ddot{a}}{a}&= -4\pi G\rho_\mathrm{M} + \frac{k}{a^2}
+			\end{align*} We used the continuity equation with $P_\mathrm{M}=0$ and $P_\Lambda = -\rho_\Lambda$ in the third line.
+			
+			\item We wish the solve the following system of equations for $\Lambda$ and $k$: \begin{align*}
+				0 &= \frac{8\pi G}{3}\rho_\mathrm{M} + \frac{\Lambda}{3} - \frac{k}{a^2}
+				\\
+				0 &= -4\pi G\rho_\mathrm{M} + \frac{k}{a^2}
+			\end{align*} Add them: \begin{align*}
+				0 &= -\frac{4\pi G}{3}\rho_\mathrm{M} + \frac{\Lambda}{3}
+				\\
+				\implies \Lambda &= 4\pi G \rho_\mathrm{M}
+				\\
+				\implies k &= 4\pi Ga^2\rho_\mathrm{M}
+			\end{align*} Since $k>0$, this is a closed universe.
+		\end{itemize}
+		
+	\end{problem}
 
 % Appendix
 % \includepdf[pages=-]{/Users/yaronetokayer/Yale Drive/Classes/ASTR 610/astr610 ps/astr610 ps 4/astr610 ps 4.pdf}
