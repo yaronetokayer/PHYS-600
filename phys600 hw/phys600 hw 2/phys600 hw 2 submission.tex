@@ -157,8 +157,55 @@
 				\implies \Lambda &= 4\pi G \rho_\mathrm{M}
 				\\
 				\implies k &= 4\pi Ga^2\rho_\mathrm{M}
+				\\
+				&= a^2\Lambda
 			\end{align*} Since $k>0$, this is a closed universe.
+			
+			\item Substituting into the second Friedmann equation, we get \begin{align*}
+				\frac{\dif^2}{\dif t^2} \left[\delta a(t)\right] &= -4\pi G \rho_\mathrm{M}(t) a(t) + \frac{k}{a(t) }
+				\\
+				&= -\Lambda \left[ 1 - 3\delta a(t) \right] \left[ 1 + \delta a(t) \right] + \Lambda  \left[ 1 + \delta a(t) \right] 
+				\\
+				&= \Lambda \left[ 2\delta a(t) - 1 \right] + \Lambda  \left[ 1 + \delta a(t) \right] 
+				\\
+				\ddot{\delta a(t)} &= 3 \Lambda \delta a(t)
+				\\
+				\implies \delta a(t) &= A e^{\sqrt{3\Lambda} t} + B e^{-\sqrt{3\Lambda} t}
+			\end{align*}  Applying the initial conditions $\delta a(t_0) = \delta a_0$ and $\dot{\delta a}(t_0) = 0$, we get $A = \frac{1}{2}\delta a_0 e^{-\sqrt{3\Lambda} t_0}$ and $B = \frac{1}{2}\delta a_0 e^{\sqrt{3\Lambda} t_0}$.  Thus \begin{equation*}
+				\delta a(t) =  \frac{\delta a_0}{2}  \left[e^{\sqrt{3\Lambda} (t-t_0)} + e^{-\sqrt{3\Lambda} (t-t_0)}\right]
+			\end{equation*} Since $\Lambda>0$ $(\impliedby \rho_\mathrm{M}>0)$, the perturbation grows exponentially and the solution is unstable.
 		\end{itemize}
+		
+	\end{problem}
+	
+	\begin{problem}{Redshift Drift}
+		Start with the definition of redshift as advised: \begin{align*}
+			\frac{\dif}{\dif t_0}\left[ 1 + z \right] &= \frac{\dif}{\dif t_0}\left[ \frac{a(t_0)}{a(t_1)} \right]
+			\\
+			\frac{\dif z}{\dif t_0} &= \frac{1}{a(t_1)} \frac{\dif a(t_0)}{\dif t_0} - \frac{a(t_0)}{a(t_1)^2} \frac{\dif a(t_1)}{\dif t_1}\frac{\dif t_1}{\dif t_0}
+			\\
+			&= \frac{a_0}{a(t_1)} \frac{\dot{a_0}}{a_0} - \frac{a(t_0)}{a(t_1)} \frac{\dot{a}(t_1)}{a(t_1)}\frac{\dif t_1}{\dif t_0}
+			\\
+			&= (1+z) H_0 - (1+z)H(t_1)(1+z)^{-1}
+			\\
+			&= (1+z) H_0 - H(t_1)
+		\end{align*} We have used $\dif t_1/\dif t_0 =(1+z)^{-1}$, which is just the time dilation formula, and be derived using dimensional analysis: \begin{align*}
+			1 + z &= \frac{\lambda_0}{\lambda_1}
+			\\
+			\implies 1 + z &= \frac{\nu_1}{\nu_0}
+		\end{align*} but by definition of frequency (and by virtue of its units) $\nu\propto \frac{1}{\dif t}$, so we have \begin{align*}
+			1 + z &= \frac{\dif t_0}{\dif t_1}.
+		\end{align*}
+		
+		Assuming a matter-dominated flat universe, we have $H(z) = H_0(1+z)^{3/2}$.  So at $z=1$, \begin{align*}
+			\left.\frac{\dif z}{\dif t_0}\right\vert_{z=1} &= \left(2 - 2^{3/2}\right)H_0
+			\\
+			&\approx -0.828 H_0
+			\\
+			&= -82.8 h \frac{\text{km}}{\text{s Mpc}}
+			\\
+			&\approx -8.462 \time 10^{-11} h \frac{1}{\text{yr}}
+		\end{align*} According to the paper cited in the problem set, Keck spectra in 2003 could measure $z$ to a precision of $10^{-5}$.  So we would need to wait $10^6$ years before we would be able to detect redshift drift for sources at $z=1$ using that technology.
 		
 	\end{problem}
 
