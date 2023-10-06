@@ -1,0 +1,162 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5442,        152]
+NotebookOptionsPosition[      4483,        126]
+NotebookOutlinePosition[      4960,        145]
+CellTagsIndexPosition[      4917,        142]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["PHYS 600: HW 3", "Title",
+ CellChangeTimes->{{3.905527627837489*^9, 
+  3.9055276318832684`*^9}},ExpressionUUID->"b6f19302-8851-4dfd-b8db-\
+731165409054"],
+
+Cell["Problem 3", "Subtitle",
+ CellChangeTimes->{{3.905527637751237*^9, 
+  3.9055276397229567`*^9}},ExpressionUUID->"8dbf43a2-a1a7-4ded-bb55-\
+ffcfe4a9f23e"],
+
+Cell["Expand the integrand for \[Chi] to second order:", "Text",
+ CellChangeTimes->{{3.905527650190291*^9, 
+  3.905527664810528*^9}},ExpressionUUID->"405f1a5c-e395-4a0d-a3c4-\
+b006ed02d3e9"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"d\[Chi]", "[", "z_", "]"}], " ", ":=", " ", 
+  FractionBox["c", 
+   RowBox[{"h0", 
+    SqrtBox[
+     RowBox[{
+      RowBox[{"\[CapitalOmega]m", " ", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"1", " ", "+", " ", "z"}], ")"}], "3"]}], "+", 
+      "\[CapitalOmega]lam", " ", "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+        "1", " ", "-", " ", "\[CapitalOmega]m", "-", "\[CapitalOmega]lam"}], 
+        ")"}], 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"1", " ", "+", " ", "z"}], ")"}], "2"]}]}]]}]]}]], "Input",
+ CellChangeTimes->{{3.905521470307188*^9, 3.905521617629957*^9}, {
+   3.905521685786209*^9, 3.905521697200705*^9}, {3.905521965153441*^9, 
+   3.905521981838398*^9}, {3.905525996289015*^9, 3.9055260574303493`*^9}, 
+   3.905526260017571*^9},
+ CellLabel->"In[39]:=",ExpressionUUID->"432749c4-4687-4530-bc34-6a8eb59604d7"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"d\[Chi]Series", " ", "=", " ", 
+  RowBox[{"Series", "[", 
+   RowBox[{
+    RowBox[{"d\[Chi]", "[", "z", "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"z", ",", "0", ",", "2"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.905526124055606*^9, 3.905526162718381*^9}, {
+  3.905526373999218*^9, 3.905526416462576*^9}, {3.905526872635643*^9, 
+  3.9055268727001257`*^9}, {3.9055315488718367`*^9, 3.905531569043517*^9}},
+ CellLabel->"In[40]:=",ExpressionUUID->"63b7a7ee-9c58-4c6e-af73-8e4f626996fa"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   FractionBox["c", "h0"], "+", 
+   FractionBox[
+    RowBox[{"c", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "2"}], "+", 
+       RowBox[{"2", " ", "\[CapitalOmega]lam"}], "-", "\[CapitalOmega]m"}], 
+      ")"}], " ", "z"}], 
+    RowBox[{"2", " ", "h0"}]], "+", 
+   FractionBox[
+    RowBox[{"c", " ", 
+     RowBox[{"(", 
+      RowBox[{"8", "-", 
+       RowBox[{"20", " ", "\[CapitalOmega]lam"}], "+", 
+       RowBox[{"12", " ", 
+        SuperscriptBox["\[CapitalOmega]lam", "2"]}], "+", 
+       RowBox[{"4", " ", "\[CapitalOmega]m"}], "-", 
+       RowBox[{"12", " ", "\[CapitalOmega]lam", " ", "\[CapitalOmega]m"}], 
+       "+", 
+       RowBox[{"3", " ", 
+        SuperscriptBox["\[CapitalOmega]m", "2"]}]}], ")"}], " ", 
+     SuperscriptBox["z", "2"]}], 
+    RowBox[{"8", " ", "h0"}]], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", "z", "]"}], "3"],
+    SeriesData[$CellContext`z, 0, {}, 0, 3, 1],
+    Editable->False]}],
+  SeriesData[$CellContext`z, 
+   0, {$CellContext`c/$CellContext`h0, 
+    Rational[1, 2] $CellContext`c $CellContext`h0^(-1) (-2 + 
+     2 $CellContext`\[CapitalOmega]lam - $CellContext`\[CapitalOmega]m), 
+    Rational[1, 8] $CellContext`c $CellContext`h0^(-1) (8 - 
+     20 $CellContext`\[CapitalOmega]lam + 
+     12 $CellContext`\[CapitalOmega]lam^2 + 4 $CellContext`\[CapitalOmega]m - 
+     12 $CellContext`\[CapitalOmega]lam $CellContext`\[CapitalOmega]m + 
+     3 $CellContext`\[CapitalOmega]m^2)}, 0, 3, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{{3.905526140233132*^9, 3.905526162967477*^9}, {
+   3.90552620975633*^9, 3.905526229872143*^9}, 3.9055262640982847`*^9, {
+   3.905526388605802*^9, 3.905526416811235*^9}, 3.905526875639621*^9, {
+   3.905531546920895*^9, 3.905531571315886*^9}},
+ CellLabel->"Out[40]=",ExpressionUUID->"ac12b2dd-8205-499f-a234-3bf2478b4e49"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1193, 699},
+WindowMargins->{{20, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+Magnification:>1.5 Inherited,
+FrontEndVersion->"13.3 for Mac OS X ARM (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"242c2429-def1-47b5-af00-229835336fce"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 159, 3, 146, "Title",ExpressionUUID->"b6f19302-8851-4dfd-b8db-731165409054"],
+Cell[742, 27, 157, 3, 79, "Subtitle",ExpressionUUID->"8dbf43a2-a1a7-4ded-bb55-ffcfe4a9f23e"],
+Cell[902, 32, 190, 3, 53, "Text",ExpressionUUID->"405f1a5c-e395-4a0d-a3c4-b006ed02d3e9"],
+Cell[1095, 37, 921, 24, 78, "Input",ExpressionUUID->"432749c4-4687-4530-bc34-6a8eb59604d7"],
+Cell[CellGroupData[{
+Cell[2041, 65, 518, 10, 46, "Input",ExpressionUUID->"63b7a7ee-9c58-4c6e-af73-8e4f626996fa"],
+Cell[2562, 77, 1893, 45, 93, "Output",ExpressionUUID->"ac12b2dd-8205-499f-a234-3bf2478b4e49"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
