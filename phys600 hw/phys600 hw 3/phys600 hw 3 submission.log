@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.29)  5 OCT 2023 19:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.29)  11 OCT 2023 21:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -591,15 +591,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4]
-Overfull \hbox (31.28427pt too wide) detected at line 220
+Overfull \hbox (31.28427pt too wide) detected at line 248
 []
  []
 
-<phys600 hw 3 work nb.pdf, id=36, 614.295pt x 794.97pt>
-File: phys600 hw 3 work nb.pdf Graphic file (type pdf)
-<use phys600 hw 3 work nb.pdf>
-Package pdftex.def Info: phys600 hw 3 work nb.pdf  used on input line 247.
-(pdftex.def)             Requested size: 446.26582pt x 226.13034pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -609,6 +604,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5]
+<chi_plot.png, id=39, 462.7689pt x 385.1991pt>
+File: chi_plot.png Graphic file (type png)
+<use chi_plot.png>
+Package pdftex.def Info: chi_plot.png  used on input line 261.
+(pdftex.def)             Requested size: 234.8775pt x 195.50262pt.
+
+Overfull \hbox (14.63324pt too wide) in paragraph at lines 261--262
+ [][] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -617,37 +622,317 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[6 <./phys600 hw 3 work nb.pdf>] (./phys600 hw 3 submission.aux) ) 
+[6 <./chi_plot.png>]
+</Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/phys6
+00 hw 3 work.pdf, id=44, 614.295pt x 794.97pt>
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf  used on input line 293.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf  used on input line 293.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+</Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/phys6
+00 hw 3 work.pdf, id=47, page=1, 614.295pt x 794.97pt>
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 1>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page1 used on input line 293.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 1>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page1 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[7]
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 1>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page1 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 1>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page1 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 1>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page1 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [8 </Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf>]
+</Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/phys6
+00 hw 3 work.pdf, id=254, page=2, 614.295pt x 794.97pt>
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 2>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page2 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 2>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page2 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 2>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page2 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [9 </Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf>]
+</Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/phys6
+00 hw 3 work.pdf, id=262, page=3, 614.295pt x 794.97pt>
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 3>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page3 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 3>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page3 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 3>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page3 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [10 </Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf>]
+</Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/phys6
+00 hw 3 work.pdf, id=268, page=4, 614.295pt x 794.97pt>
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 4>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page4 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 4>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page4 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 4>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page4 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [11 </Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf>]
+</Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/phys6
+00 hw 3 work.pdf, id=274, page=5, 614.295pt x 794.97pt>
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 5>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page5 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 5>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page5 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 5>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page5 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [12 </Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf>]
+</Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/phys6
+00 hw 3 work.pdf, id=283, page=6, 614.295pt x 794.97pt>
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 6>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page6 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 6>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page6 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 6>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page6 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [13 </Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf>]
+</Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/phys6
+00 hw 3 work.pdf, id=294, page=7, 614.295pt x 794.97pt>
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 7>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page7 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 7>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page7 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 7>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page7 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [14 </Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf>]
+</Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/phys6
+00 hw 3 work.pdf, id=310, page=8, 614.295pt x 794.97pt>
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 8>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page8 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 8>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page8 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 8>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page8 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [15 </Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf>]
+</Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/phys6
+00 hw 3 work.pdf, id=319, page=9, 614.295pt x 794.97pt>
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 9>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page9 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 9>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page9 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf Graphic file (type pdf)
+<use /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/p
+hys600 hw 3 work.pdf, page 9>
+Package pdftex.def Info: /Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys6
+00 hw/phys600 hw 3/phys600 hw 3 work.pdf , page9 used on input line 293.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [16 </Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/
+phys600 hw 3 work.pdf>]
+<phys600 hw 3 work nb.pdf, id=325, 614.295pt x 794.97pt>
+File: phys600 hw 3 work nb.pdf Graphic file (type pdf)
+<use phys600 hw 3 work nb.pdf>
+Package pdftex.def Info: phys600 hw 3 work nb.pdf  used on input line 300.
+(pdftex.def)             Requested size: 446.26582pt x 226.13034pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[17 <./phys600 hw 3 work nb.pdf>] (./phys600 hw 3 submission.aux) ) 
 Here is how much of TeX's memory you used:
- 8691 strings out of 476025
- 144518 string characters out of 5790017
+ 8737 strings out of 476025
+ 148602 string characters out of 5790017
  1871388 words of memory out of 5000000
- 28993 multiletter control sequences out of 15000+600000
+ 29035 multiletter control sequences out of 15000+600000
  522504 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,15n,131p,496b,826s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/t
-exlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/te
-xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/te
-xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/tex
-live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
-ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texliv
-e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/
-2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/20
-23/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023/texmf-dist/f
-onts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-di
-st/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "phys600 hw 3 submission.pdf" (6 pages, 411995 bytes).
+ 83i,19n,131p,680b,826s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/
+texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/t
+exlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/t
+exlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/tex
+live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texli
+ve/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive
+/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2
+023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/202
+3/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023/texmf-dist/
+fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-d
+ist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on "phys600 hw 3 submission.pdf" (17 pages, 734554 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 127 compressed objects within 2 object streams
+ 490 PDF objects out of 1000 (max. 8388607)
+ 194 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 22 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 87 words of extra memory for PDF output out of 10000 (max. 10000000)
 
