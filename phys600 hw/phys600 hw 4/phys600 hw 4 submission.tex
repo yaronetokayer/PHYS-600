@@ -74,7 +74,7 @@
 	
 	\title{PHYS 600: Homework 4}
 	\author{Yarone Tokayer}
-	\date{October 27, 2023}
+	\date{October 29, 2023}
 	
 	\maketitle
 	
@@ -82,7 +82,72 @@
 
 	\begin{problem}{Recombination}
 		\begin{enumerate}
-			\item hi
+			\item The process we are interested in here is recombination of protons and electrons into neutral hydrogen.  i.e., the reaction \begin{equation*}
+				e^- + p^+ \leftrightarrow \mathrm{H} + \gamma
+			\end{equation*} tending to the right as the Universe cools.  Recombination occurred at $z\sim 1100$ (around the redshift of the CMB), so we can treat the species as non-relativistic.  We then have, for each species of interest, \begin{align*}
+				n_i &= g_i \left(\frac{m_i T}{2\pi}\right)^{3/2}e^\frac{\mu_i-m_i}{T}
+			\end{align*} where $T$ is the temperature of the baryon-photon fluid with which these particles are all in equilibrium.  In order to eliminate chemical potential from the equation, we evaluate: \begin{align}
+				\frac{n_\mathrm{H}}{n_en_p} &= \frac{g_\mathrm{H}}{g_eg_p} \left( \frac{m_\mathrm{H}}{m_em_p} \frac{ 2\pi}{T}\right)^{3/2} e^\frac{\cancel{\mu_\mathrm{H}} - \cancel{(\mu_e+\mu_p)} - m_\mathrm{H} + m_e + m_p}{T} \notag
+				\\
+				\implies \frac{n_\mathrm{H}}{n_e^2} &= \left( \frac{m_\mathrm{H}}{m_em_p} \frac{ 2\pi}{T}\right)^{3/2} e^{E_I/T} \notag
+				\\
+				&= \left( \frac{ 2\pi}{m_eT}\right)^{3/2} e^{E_I/T}  \label{eq:n_h/n_e^2}
+			\end{align} where we have used the fact that $\mu_\mathrm{H} = \mu_e + \mu_p$, $g_\mathrm{H} = 4$, $m_p\approx m_\mathrm{H}$, $g_e = g_p = 2$, $m_e + m_p - m_\mathrm{H} = 13.6 \text{ eV} \equiv E_I$ (the ionization energy of hydrogen), and $n_e = n_p$ in a neutral universe.\\
+			
+			Now, we shift our focus to finding an expression for $X_e$, the free electron fraction defined by $X_e \equiv n_e/(n_p + n_\mathrm{H})$.  If we assume that protons and hydrogen comprises all of the baryons in the Universe at this point (i.e., we ignore the abundance of helium), then we have \begin{align*}
+				n_p + n_e = n_b &= \eta n_\gamma
+				\\
+				&= \eta \frac{\zeta(3)}{\pi^2}2 T^3
+			\end{align*} where $\eta$ is the baryon-to-photon ratio, we have made use of the number density formula for relativistic species, and the fact that $g_\gamma = 2$.  But now we can make use of Eq.~\ref{eq:n_h/n_e^2} and write: \begin{align*}
+				\frac{1 - X_e}{X_e^2} &= \frac{(1 - n_e) n_b}{n_e^2}
+				\\
+				&= \frac{n_\mathrm{H}}{n_e^2}n_b
+				\\
+				&=\frac{2\zeta(3)}{\pi^2} \eta  \left(  \frac{ 2\pi T}{m_e}\right)^{3/2} e^{E_I/T},
+			\end{align*} the Saha equation.
+			
+			\item The Saha equation is a quadratic equation for $X_e$ of the form $AX_e + BX_e + C = 0$, with $B = 1$, $C=-1$, and \begin{equation*}
+				A= \frac{2\zeta(3)}{\pi^2} \eta  \left(  \frac{ 2\pi T}{m_e}\right)^{3/2} e^{E_I/T}.
+			\end{equation*} We then have, from the quadratic formula \begin{align*}
+				X_e &= \frac{-1 \pm \sqrt{1 + 4A}}{2A}
+			\end{align*} and we choose the $+$ sign, since $X_e$ must be a real number and $A > 0$ for all $T$.\\
+			
+			To get our expression to be in terms of $z$, we use the relation $T = T_0 (1+z)$, where $T_0$ is the temperature of the CMB today.  See Fig.~\ref*{fig:x_e}.  The code to generate this plot can be found in the appendix.
+			
+			\begin{figure}
+				\centering
+				\fbox{
+					\begin{minipage}{\linewidth}
+						\centering
+						\includegraphics[width=0.5\linewidth]{x_e_plot.png}
+						\caption{The free electron fraction as a function of redshift around the epoch of reionization.  The redshifts at which $X_e$ = 0.1 and 0.5 are indicated.}\label{fig:x_e}
+					\end{minipage}
+				}
+			\end{figure}
+			
+			\item We use a bisection method to invert our function $X_e(z)$.  See the appendix.  We find that $\boxed{z(X_e = 0.1) \approx 1259}$ and $\boxed{z(X_e = 0.5) \approx 1377}$.  As can be seen from the plot, the transition for a universe with almost all electrons free to one in which almost none are happens over a relatively short span of redshifts.
+			
+			\item For a single component universe, we have (see lecture notes) \begin{align*}
+				t &= \frac{1}{H_0}\frac{2}{3(1  + w)}a^{\frac{3}{2}(1+w)}
+				\\
+				&= \frac{1}{H_0}\frac{2}{3(1  + w)}\left(\frac{1}{1+z}\right)^{\frac{3}{2}(1+w)}
+			\end{align*} For matter, $w\approx 0$, and we get that $\boxed{t(z=1259)\approx 208,000 \text{ years}}$ (for $h=0.7$).
+			
+			\item We seek to solve \begin{align*}
+				\Gamma_T(z) &= H(z)
+				\\
+				n_e(z)\sigma_T &= H_0 \sqrt{\Omx{m,0}( 1 + z )^3} & \text{(matter domination)}
+				\\
+				X_e(z)n_b(z)\sigma_T &= H_0 \sqrt{\Omx{m,0}( 1 + z )^3}
+				\\
+				X_e(z) \eta \frac{\zeta(3)}{\pi^2}2 T_0^3 (1+z)^3\sigma_T &= H_0 \sqrt{\Omx{m,0}( 1 + z )^3} & \text{($n_b$ formula above)}
+				\\
+				\implies X_e(z) (1+z)^{3/2} &= \frac{H_0\pi^2\sqrt{\Omx{m,0}}}{2\eta\zeta(3)\sigma_TT_0^3}
+				\\
+				&\approx 215.592 & \text{(see calculation in appendix)}
+			\end{align*} We use a numerical bisection method to invert this equation for $z$ and we find that $\boxed{z_\mathrm{dec} \approx 1114}$.\\
+			
+			Using the same calculations as above, we get $\boxed{t_\mathrm{dec}\approx 250,000 \text{ years }}$ and $X_e(z_\mathrm{dec})\approx \boxed{0.0058}$.  In the words of Baumann, ``a large degree of neutrality is necessary before the universe becomes transparent to photons.''
 
 		\end{enumerate} 
 	\end{problem}
