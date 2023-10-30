@@ -6,7 +6,7 @@
 \documentclass[12pt]{article}
 
 %AMS-TeX packages
-\usepackage{amssymb,amsmath,amsthm} 
+\usepackage{amssymb,amsmath,amsthm, mathtools} 
 \usepackage{commath}
 \usepackage[margin=1in]{geometry}
 \usepackage{graphicx,ctable,booktabs}
@@ -84,7 +84,7 @@
 		\begin{enumerate}
 			\item The process we are interested in here is recombination of protons and electrons into neutral hydrogen.  i.e., the reaction \begin{equation*}
 				e^- + p^+ \leftrightarrow \mathrm{H} + \gamma
-			\end{equation*} tending to the right as the Universe cools.  Recombination occurred at $z\sim 1100$ (around the redshift of the CMB), so we can treat the species as non-relativistic.  We then have, for each species of interest, \begin{align*}
+			\end{equation*} tending to the right as the Universe cools.  Recombination occurred at $z\sim 1100$ (around the redshift of the CMB), so we can treat the species as non-relativistic.  We then have, for each species of interest, $i$, \begin{align*}
 				n_i &= g_i \left(\frac{m_i T}{2\pi}\right)^{3/2}e^\frac{\mu_i-m_i}{T}
 			\end{align*} where $T$ is the temperature of the baryon-photon fluid with which these particles are all in equilibrium.  In order to eliminate chemical potential from the equation, we evaluate: \begin{align}
 				\frac{n_\mathrm{H}}{n_en_p} &= \frac{g_\mathrm{H}}{g_eg_p} \left( \frac{m_\mathrm{H}}{m_em_p} \frac{ 2\pi}{T}\right)^{3/2} e^\frac{\cancel{\mu_\mathrm{H}} - \cancel{(\mu_e+\mu_p)} - m_\mathrm{H} + m_e + m_p}{T} \notag
@@ -95,7 +95,7 @@
 			\end{align} where we have used the fact that $\mu_\mathrm{H} = \mu_e + \mu_p$, $g_\mathrm{H} = 4$, $m_p\approx m_\mathrm{H}$, $g_e = g_p = 2$, $m_e + m_p - m_\mathrm{H} = 13.6 \text{ eV} \equiv E_I$ (the ionization energy of hydrogen), and $n_e = n_p$ in a neutral universe.\\
 			
 			Now, we shift our focus to finding an expression for $X_e$, the free electron fraction defined by $X_e \equiv n_e/(n_p + n_\mathrm{H})$.  If we assume that protons and hydrogen comprises all of the baryons in the Universe at this point (i.e., we ignore the abundance of helium), then we have \begin{align*}
-				n_p + n_e = n_b &= \eta n_\gamma
+				n_p + n_\mathrm{H} = n_b &= \eta n_\gamma
 				\\
 				&= \eta \frac{\zeta(3)}{\pi^2}2 T^3
 			\end{align*} where $\eta$ is the baryon-to-photon ratio, we have made use of the number density formula for relativistic species, and the fact that $g_\gamma = 2$.  But now we can make use of Eq.~\ref{eq:n_h/n_e^2} and write: \begin{align*}
@@ -119,13 +119,13 @@
 				\fbox{
 					\begin{minipage}{\linewidth}
 						\centering
-						\includegraphics[width=0.5\linewidth]{x_e_plot.png}
+						\includegraphics[width=0.65\linewidth]{x_e_plot.png}
 						\caption{The free electron fraction as a function of redshift around the epoch of reionization.  The redshifts at which $X_e$ = 0.1 and 0.5 are indicated.}\label{fig:x_e}
 					\end{minipage}
 				}
 			\end{figure}
 			
-			\item We use a bisection method to invert our function $X_e(z)$.  See the appendix.  We find that $\boxed{z(X_e = 0.1) \approx 1259}$ and $\boxed{z(X_e = 0.5) \approx 1377}$.  As can be seen from the plot, the transition for a universe with almost all electrons free to one in which almost none are happens over a relatively short span of redshifts.
+			\item We use a bisection method to invert our function $X_e(z)$.  See the appendix.  We find that $\boxed{z(X_e = 0.1) \approx 1259}$ and $\boxed{z(X_e = 0.5) \approx 1377}$.  As can be seen from the plot, the transition from a universe with almost all free electrons free to one in which there are almost none are happens over a relatively short span of redshifts.
 			
 			\item For a single component universe, we have (see lecture notes) \begin{align*}
 				t &= \frac{1}{H_0}\frac{2}{3(1  + w)}a^{\frac{3}{2}(1+w)}
@@ -155,31 +155,97 @@
 	\begin{problem}{``What-if'' BBN}
 
 	\begin{itemize}
-		\item hi
+		\item Here, instead of the combination of protons and electrons into hydrogen, we consider the decay of neutrons into protons: \begin{align*}
+			n + \nu_e \leftrightarrow p^+ + e^-
+			\\
+			n + e^+ \leftrightarrow p^+ + \bar{\nu}_e.
+		\end{align*}  As before, we have for each species, \begin{align*}
+			n_i &= g_i \left(\frac{m_i T}{2\pi}\right)^{3/2}e^\frac{\mu_i-m_i}{T}
+		\end{align*}  Assuming that the chemical potentials of electrons and neutrinos are negligible, and using the face that $g_n = g_p$, we have \begin{align*}
+			\frac{n_n}{n_p} &= \left(\frac{m_n}{m_p}\right)^{3/2}e^\frac{-(m_n - m_p)}{T}
+			\\
+			&\approx e^\frac{-(m_n - m_p)}{T}
+			\\
+			&\equiv e^{-\frac{Q}{T}},
+		\end{align*} where we have approximated $m_n/m_p\approx 1$, and defined $Q\equiv m_n - m_p$.\\
+		
+		Defining the neutron fraction $X_n \equiv n_n/(n_n + n_p)$, we have \begin{align*}
+			X_n^{-1} &= \frac{n_n}{n_n} + \frac{n_p}{n_n}
+			\\
+			&= 1 +  e^{\frac{Q}{T}}
+			\\
+			\implies X_n &= \frac{1}{1 +  e^{\frac{Q}{T}}}
+			\\
+			&= \frac{ e^{-\frac{Q}{T}}}{1 +  e^{-\frac{Q}{T}}}.
+		\end{align*}
+		
+		\item For a freezeout temperature of $0.8$ MeV, we get a freezeout abundance of $\sim \boxed{0.16}$.  See appendix for the calculation.
+		
+		\item If every two neutrons ends up in a helium-4 atom, then \begin{align*}
+			Y_P &= \frac{4n_\mathrm{He}}{n_\mathrm{H}}
+			\\
+			&= \frac{2n_n}{n_p}
+			\\
+			&= \frac{2n_n}{n_n + n_p}\frac{n_n + n_p}{n_p}
+			\\
+			&= \frac{2n_n}{n_n + n_p}\frac{n_n + n_p}{1 - n_n}
+			\\
+			&= \frac{2X_n}{1 - X_n}
+			\\
+			&\approx \boxed{ 0.39}.
+		\end{align*}
+		
+		\item Here we perform the same calculations as above, but with $Q = -2.6$ MeV (double the actual difference).  We get $\boxed{X_n \approx 0.037}$ and $\boxed{Y_P\approx 0.078}$.
 	\end{itemize}
 		
 	\end{problem}
 	
 	\begin{problem}{Freeze-in DM}
 		\begin{enumerate}[label=(\alph*)]
-			\item hi
+			\item As instructed we begin with the Boltzmann equation for freeze-in: \begin{align*}
+				\frac{1}{a^3} \frac{\dif}{\dif t} na^3 &= 2\Gamma h(t)n_\mathrm{\sigma,eq}(t)
+			\end{align*} We define $Y\equiv n/T^3$, which implies that, for the LHS, \begin{align*}
+				\frac{1}{a^3} \frac{\dif}{\dif t} na^3 &= \frac{T^3}{T_0^3} \frac{\dif}{\dif t} n\frac{T_0^3}{T^3}
+				\\
+				&= T^3 \frac{\dif Y}{\dif t}
+				\\
+				\implies \frac{\dif Y}{\dif t} &= 2\Gamma h(t)Y_\mathrm{\sigma,eq}(t)
+			\end{align*} Now, to switch variables from $t$ to $x$, we note that the epoch of interest is radiation domination, during which $a\propto\sqrt{t}$.  Using the fact that $x\propto T^{-1} \propto a$, we have \begin{align*}
+				\dif x \propto t^{-1/2}\dif t \propto x^{-1}\dif t \implies \frac{\dif}{\dif t} \propto x^{-1} \frac{\dif}{\dif x}
+			\end{align*} So we have \begin{align*}
+				x^{-1}\frac{\dif Y}{\dif x} &= \text{const.} \times 2\Gamma h(x)Y_\mathrm{\sigma,eq}(x)
+				\\
+				\implies \Aboxed{\frac{\dif Y}{\dif x}  &= \lambda_1 xh(x)Y_\mathrm{eq}(x)}
+			\end{align*}
+			
+			\item First we need an expression for $Y_\mathrm{eq}(x)$.  In general for Fermions, we have the equilibrium numberpye density as \begin{align*}
+				n &= \frac{g}{2\pi^2}T^3 I(x) & I(x) &= \int_0^\infty\dif\xi \frac{\xi^2}{\exp\left[\sqrt{\xi^2 + x^2}\right] +1}
+			\end{align*}\begin{align*}
+				\implies Y_\mathrm{eq} &= \frac{g}{2\pi^2} I(x)
+			\end{align*}  Since we are looking for order of magnitude results, we can look at the case of $g=1$.  See plot in Fig.~\ref{fig:y}
+			
+			\begin{figure}
+				\centering
+				\fbox{
+					\begin{minipage}{\linewidth}
+						\centering
+						\includegraphics[width=0.65\linewidth]{y_plot.png}
+						\caption{The free electron fraction as a function of redshift around the epoch of reionization.  The redshifts at which $X_e$ = 0.1 and 0.5 are indicated.}\label{fig:y}
+					\end{minipage}
+				}
+			\end{figure}
+			
+			\item Notice that in the ``freeze in'' scenario, abundance \textit{decreases} with the interaction rate $\Gamma$, while in the ``freeze out'' scenario, the opposite is true.
 			
 		\end{enumerate}
 	\end{problem}
 
 
 % Appendix
-%\appendix
-%\section{Python code}
-%\includepdf[pages=-, frame=true, scale=0.9]{/Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 3/phys600 hw 3 work.pdf}
-%\section{Mathematica code}
-%
-%\begin{figure}[h!]
-%	\centering
-%	\fbox{
-%		\includegraphics[trim={0 15cm 0 2cm},clip, width=0.95\linewidth]{phys600 hw 3 work nb.pdf}
-%	}
-%\end{figure}
+\appendix
+\section{Python code}
+\includepdf[pages=-, frame=true, scale=0.9]{/Users/yaronetokayer/Yale Drive/Classes/PHYS 600/phys600 hw/phys600 hw 4/phys600 hw 4 work.pdf}
+
 
 
 \end{document}
